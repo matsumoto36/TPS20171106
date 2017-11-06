@@ -24,7 +24,7 @@ public class BulletController : MonoBehaviour
     {
         time += Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetMouseButtonDown(0))
         {
             if(time > Interval)
             {
