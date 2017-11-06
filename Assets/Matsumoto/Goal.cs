@@ -13,4 +13,11 @@ public class Goal : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	void OnCollisionEnter(Collision other) {
+		if(other.gameObject.tag == "Player") {
+			//ゴールできた
+			Debug.Log("Goal");
+		}
+	}
 }
