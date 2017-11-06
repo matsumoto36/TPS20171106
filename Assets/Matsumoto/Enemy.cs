@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour {
                 //スコアを足す
                 ss.score += score;
 			}
+			Destroy(other.gameObject);
 		}
 	}
 }
